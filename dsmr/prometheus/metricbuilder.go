@@ -30,7 +30,6 @@ func (mb MetricBuilder) CheckUnit(unit string) bool {
 // MetricBuilders contains builders for all object types in a DSMR frame.
 var metricBuilders = map[string]MetricBuilder{
 	// The first 3 objects from the spec are parsed as part of the frame:
-	/*
 		// Version information for P1 output 1-3:0.2.8.255 2 1 Data S2, tag 9
 		"1-3:0.2.8": MetricBuilder{
 			ValueType: prometheus.UntypedValue,
@@ -41,6 +40,7 @@ var metricBuilders = map[string]MetricBuilder{
 				prometheus.Labels{},
 			),
 		},
+	/*
 		// Date-time stamp of the P1 message 0-0:1.0.0.255 2 8 TST YYMMDDhhmmssX
 		"0-0:1.0.0": MetricBuilder{
 			ValueType: prometheus.CounterValue,
