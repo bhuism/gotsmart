@@ -51,6 +51,7 @@ var metricBuilders = map[string]MetricBuilder{
 				prometheus.Labels{},
 			),
 		},
+	*/
 		// Equipment identifier 0-0:96.1.1.255 2 Value 1 Data Sn (n=0..96), tag 9
 		"0-0:96.1.1": MetricBuilder{
 			ValueType: prometheus.UntypedValue,
@@ -61,7 +62,6 @@ var metricBuilders = map[string]MetricBuilder{
 				prometheus.Labels{},
 			),
 		},
-	*/
 	// Meter Reading electricity delivered to client (Tariff 1) in 0,001
 	// kWh 1-0:1.8.1.255 2 Value 3 Register F9(3,3), tag 6 kWh
 	"1-0:1.8.1": MetricBuilder{
