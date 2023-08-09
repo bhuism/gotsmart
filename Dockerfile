@@ -1,4 +1,4 @@
-FROM docker.io/library/golang:1.20-alpine as builder
+FROM docker.io/library/golang:1.21-alpine as builder
 WORKDIR /usr/src/app
 COPY . .
 ENV CGO_ENABLED 0
