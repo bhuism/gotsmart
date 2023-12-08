@@ -6,7 +6,7 @@ RUN go vet ./... && \
     go test ./... && \
     go build -o gotsmart
 
-FROM alpine:3.18
+FROM alpine:3.19
 COPY --from=builder /usr/src/app/gotsmart \
 	/usr/local/bin/gotsmart
 EXPOSE 8080
